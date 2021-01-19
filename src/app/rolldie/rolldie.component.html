@@ -1,0 +1,67 @@
+ <div class="fancy">
+
+      <h3>Bob <i class="fa fa-male" aria-hidden="true"></i></h3> 
+        The city is : {{city1}}
+       <br>
+        The price is : {{price1}}
+       <br>
+        dice Rolled : {{numberOnDice1}}
+       <br>
+        money left : {{player1account}}
+        <br>
+   </div>
+   <br>
+
+
+   <h3> Chance of {{player}} </h3>   <button (click)="rolldie()" class="btn btn-primary" >Roll die</button>
+<br>
+<br>
+
+ <table class="tablee" style="background-image:url('.../../../../assets/new.jpg'); height: 1000 px; width: 1000px; ">
+
+    
+
+    <td>
+    <tr *ngFor = "let data of cities">{{data}}</tr>
+ </td>
+ <td>
+    <tr *ngFor = "let data of cost">
+        {{data}}$
+      </tr>
+    </td>
+    <td>
+        <tr *ngFor = "let data of rent">
+            {{data}}$
+          </tr>
+        </td>
+    <td>
+        <tr *ngFor = "let data of position1">
+            {{data}}
+          </tr>
+        </td>
+        <td>
+            <tr *ngFor = "let data of position2">
+                {{data}}
+              </tr>
+            </td>
+         
+</table>
+
+<br><br>
+
+<div class="fancy">
+
+    <h3>Alice <i class="fa fa-female" aria-hidden="true"></i></h3>  
+       The city is : {{city2}}
+       <br>
+       The price is : {{price2}}
+       <br>
+       dice Rolled : {{numberOnDice2}}
+       <br>
+       money left : {{player2account}}
+        <br>
+   
+   </div>
+
+
+
